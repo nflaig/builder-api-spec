@@ -111,39 +111,33 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "allOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "code",
-                        "message"
-                      ],
-                      "properties": {
-                        "code": {
-                          "description": "Either specific error code in case of invalid request or http status code",
-                          "type": "number",
-                          "example": 404
-                        },
-                        "message": {
-                          "description": "Message describing error",
-                          "type": "string"
-                        },
-                        "stacktraces": {
-                          "description": "Optional stacktraces, sent when node is in debug mode",
-                          "type": "array",
-                          "items": {
-                            "type": "string"
-                          }
-                        }
-                      }
+                  "type": "object",
+                  "required": [
+                    "code",
+                    "message"
+                  ],
+                  "properties": {
+                    "code": {
+                      "description": "Either specific error code in case of invalid request or http status code",
+                      "type": "number",
+                      "example": 404
                     },
-                    {
-                      "example": {
-                        "code": 400,
-                        "message": "unknown validator"
+                    "message": {
+                      "description": "Message describing error",
+                      "type": "string"
+                    },
+                    "stacktraces": {
+                      "description": "Optional stacktraces, sent when node is in debug mode",
+                      "type": "array",
+                      "items": {
+                        "type": "string"
                       }
                     }
-                  ]
+                  }
+                },
+                "example": {
+                  "code": 400,
+                  "message": "unknown validator"
                 }
               }
             }
@@ -6552,39 +6546,33 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "allOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "code",
-                        "message"
-                      ],
-                      "properties": {
-                        "code": {
-                          "description": "Either specific error code in case of invalid request or http status code",
-                          "type": "number",
-                          "example": 404
-                        },
-                        "message": {
-                          "description": "Message describing error",
-                          "type": "string"
-                        },
-                        "stacktraces": {
-                          "description": "Optional stacktraces, sent when node is in debug mode",
-                          "type": "array",
-                          "items": {
-                            "type": "string"
-                          }
-                        }
-                      }
+                  "type": "object",
+                  "required": [
+                    "code",
+                    "message"
+                  ],
+                  "properties": {
+                    "code": {
+                      "description": "Either specific error code in case of invalid request or http status code",
+                      "type": "number",
+                      "example": 404
                     },
-                    {
-                      "example": {
-                        "code": 400,
-                        "message": "Invalid block: missing signature"
+                    "message": {
+                      "description": "Message describing error",
+                      "type": "string"
+                    },
+                    "stacktraces": {
+                      "description": "Optional stacktraces, sent when node is in debug mode",
+                      "type": "array",
+                      "items": {
+                        "type": "string"
                       }
                     }
-                  ]
+                  }
+                },
+                "example": {
+                  "code": 400,
+                  "message": "Invalid block: missing signature"
                 }
               }
             }
